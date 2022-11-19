@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 95%;
+    background-color: red;
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav .about{
+    border-bottom: 1px solid #000;
+}
+#nav .tw{
+    color: rgb(6, 135, 185);
+}
+button{
+    padding: 5px;
+}
+#text{
+    font-size: 20px;
+    width:60% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    
+}
+#text h1{
+    font-size: 60px;
+}
+#text p{
+    padding: 20px 0;
+}
+#text button:hover{
+    font-weight: 300px;
+    background-color: #000;
+    color: antiquewhite;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: black;
+}
+#top{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+}
+#box1{
+    width: 70%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: url("achal.png");
+    background-size: cover;
+}
+#box2{
+    width: 30%;
+    height: 100%;
+    background:linear-gradient(45deg,rgb(50, 50, 250),rgb(129, 55, 55),rgb(235, 130, 130));
+    position: relative;
+    
+    
+}
+#box2 img{
+    width: 75%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#bottom{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: aliceblue;
+    
+}
+
+#bottom img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#footer{
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0 320px;
+}
+#footer i{
+    font-size:20px;
+}
+#footer .ins{
+    color: palevioletred;
+}
+#footer .ws{
+    color: green;
+}
+#footer .yt{
+    color: red;
+}
+#footer .fb{
+    color: lightblue;
+}
+#footer p{
+    color: aliceblue;
+}
+@media (max-width:500px) {
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+    #footer{
+        padding: 0 20px;
+    }
+}
+
